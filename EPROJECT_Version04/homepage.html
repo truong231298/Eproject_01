@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/homepage/style.css">
+    <link rel="stylesheet" href="style/homepage/webmaster.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .search-form ul{
+            font-size: 2rem;
+            margin-top: 200px;
+            color: white;
+
+        }
+    </style>
+
+    <script>
+        function showLogin() {
+            var loginForm = document.getElementById('login-form');
+            loginForm.style.display = 'block';
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <!--Header section start-->
+    <header class="header">
+        <a href="" class="logo"><img src="https://img.upanh.tv/2023/12/17/mountain.png"
+                style="width: 100px; border-radius: 5px;" alt="logo">moutaineering</a>
+
+        <nav class="navbar">
+            <div>
+                <span id="nav-close" class="material-symbols-outlined">
+                    close
+                </span>
+                <a href="homepage.html">Home</a>
+                <a href="technican.html">Technican</a>
+                <a href="development.html">Latest Development</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="club.html">Clubs</a>
+               
+                <a href="guidelines.html">Guidelines</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" onclick="showLogin(); return false;">Login</a>
+            </div>
+
+            <div id="login-form" style="display: none;">
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+                <button onclick="attemptLogin()">Submit</button>
+            </div>
+
+        </nav>
+
+        <div class="icons">
+            <a href="#"><span id="menu-btn" class="material-symbols-outlined">
+                    menu
+                </span></a>
+
+            <a href="#"><span class="material-symbols-outlined" id="search-btn">
+                    search
+                </span></a>
+        </div>
+       
+
+    </header>
+    <!--Header section end-->
+
+    <div>
+
+    </div>
+
+    <!--Search form-->
+    <div class="search-form">
+        <span id="close-search" class="material-symbols-outlined">
+            close
+        </span>
+        <form action="">
+            <input type="text" name="" placeholder="search here..." id="search-box"  oninput="search()">
+            <label><span class="material-symbols-outlined">
+                    search
+                </span></label>
+        </form>
+        <ul id="searchResults">
+
+        </ul>
+    </div>
+    <!--Search form end-->
+
+    <!--Home section start-->
+    <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box"
+                        style="background: url(https://img.upanh.tv/2023/12/17/guillaume-marques-9HRLg-yzeq8-unsplash.jpg) no-repeat;">
+                        <div class="content">
+                            <span>never stop</span>
+                            <h3>exploring</h3>
+                            <p>Exploring is something I believe to be embedded in our DNA, and from the existence of
+                                humans that is exactly what we have done. Explored. It started with the land; our
+                                ancient ancestors roaming about and settling everywhere. Then after thousands of years
+                                the exploration of water. Then the exploration of the wastelands, space, and now the
+                                underwater ways that weave our planet together like an intricate root system of life.
+                            </p>
+                            <a href="#" class="btn">get started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box second"
+                        style="background: url(https://img.upanh.tv/2023/12/17/rocky-mountains-person-standing-it.jpg) no-repeat;">
+                        <div class="content">
+                            <span>make tour</span>
+                            <h3>amazing</h3>
+                            <p>this trip is indeed a trip I will never forget because I went to states I have not been
+                                in before, I went to a new country and I also visited the Statue of Liberty. This trip
+                                was packed with a lot of fun experiences and unforgettable memories. </p>
+                            <a href="#" class="btn">get started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box"
+                        style="background: url(https://img.upanh.tv/2023/12/17/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand.jpg) no-repeat;">
+                        <div class="content">
+                            <span>explore the</span>
+                            <h3>new world</h3>
+                            <p>the movements to explore the new world increased rapidly. Among them was the arrival of
+                                the early Europeans on Americas. Only in a few decades this arrival has changed the land
+                                and the people of the Americas both on the physical the non-physical outcomes.</p>
+                            <a href="#" class="btn">get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!--Home section end-->
+
+    <!--categorysection start-->
+    <section class="category">
+
+        <h1 class="heading" id="home_1">History</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/WilliamCecilSlingsby_Storen.jpg/220px-WilliamCecilSlingsby_Storen.jpg"
+                    alt="">
+                <div class="content" id="home_1_1">
+                    <h3 >Early mountaineering</h3>
+                    <p>Mountaineering, mountain climbing, or alpinism is a set of outdoor activities that involves
+                        ascending mountains. Mountaineering-related activities include traditional outdoor climbing,
+                        skiing,
+                        and traversing via ferratas that have become sports in their own right.Indoor climbing,
+                        sport climbing, and bouldering are also considered variants of mountaineering by some,but are
+                        part of a wide group of mountain sports. </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Edward_Whymper_Calkin.jpg/170px-Edward_Whymper_Calkin.jpg"
+                    alt="">
+                <div class="content" id="home_1_2">
+                    <h3>The Enlightenment and the Golden Age of Alpinism</h3>
+                    <p>The Age of Enlightenment and the Romantic era marked a change of attitudes towards high
+                        mountains. In
+                        1757 Swiss scientist Horace-Bénédict de Saussure made the first of several unsuccessful attempts
+                        on
+                        Mont Blanc in France. He then offered a reward to anyone who could climb the mountain, which was
+                        claimed in 1786 by Jacques Balmat and Michel-Gabriel Paccard. </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/M_Rainier.jpg/230px-M_Rainier.jpg"
+                    alt="">
+                    <div class="content" id="home_1_3">
+
+                <h3>Expansion around the world</h3>
+                <p>In the 19th century, the focus of mountaineering turned towards mountains beyond the Alps. One of the
+                    earliest mountain areas to be explored beyond the Alps in the 19th century were the mountains of
+                    Norway—particularly Jotunheimen—where British mountaineers such as William Cecil Slingsby, Harold
+                    Raeburn and Howard Priestman were early pioneers.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            </div>
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Summitting_Island_Peak.jpg/230px-Summitting_Island_Peak.jpg"
+                    alt="">
+                <div class="content" id="home_1_4">
+                    <h3>The last frontier: The Himalayas</h3>
+                    <p>The last and greatest mountain range to be conquered was the Himalayas in South
+                        Asia. They had initially been surveyed by the British Empire for military and strategic reasons.
+                        In
+                        1892 Sir William Martin Conway explored the Karakoram Himalayas, and climbed a peak of 23,000 ft
+                        (7,000 m). In 1895 Albert F. Mummery died while attempting Nanga Parbat </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--categorysection end-->
+
+    <!--about section start-->
+    <section class="about" id="about">
+        <div class="image">
+            <img src="https://img.upanh.tv/2023/12/17/about.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>memorable outdoor experiences</h3>
+            <p>A Little About Me and My “Outdoor Experience” As someone who finishing her sophomore year of college and
+                will be starting as a junior in the fall, if I would have asked myself ten years ago, as a third or
+                fourth grader, if I would ever consider a career involving bunches of writing, </p>
+            <p>my answer would have been
+                no. When I was young, every essay, story, and report I had to write I considered a chore, and for my
+                career, I wanted to do something fun, like swim with dolphins for a living.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </section>
+    <!--about section end-->
+
+    <!--shop section start-->
+    <section class="shop" id="shop">
+        <h1 class="heading">Types</h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="https://img.upanh.tv/2023/12/17/hu-chen-FZ0qzjVF_-c-unsplash.jpg" alt="">
+                        <div class="icons">
+
+                            <a href="#"><span class="material-symbols-outlined">
+                                    visibility
+                                </span></a>
+                            <a href="#"><span class="material-symbols-outlined">
+                                    share
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Rock Climbing</h3>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="https://img.upanh.tv/2023/12/17/luke-helgeson-M2DkvRbumM0-unsplash.jpg" alt="">
+                        <div class="icons">
+
+                            <a href="#"><span class="material-symbols-outlined">
+                                    visibility
+                                </span></a>
+                            <a href="#"><span class="material-symbols-outlined">
+                                    share
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Alpine Climbing</h3>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="https://img.upanh.tv/2023/12/17/vertical-shot-male-skiing-mountain-covered-with-snow-winter.jpg"
+                            alt="">
+                        <div class="icons">
+
+                            <a href="#"><span class="material-symbols-outlined">
+                                    visibility
+                                </span></a>
+                            <a href="#"><span class="material-symbols-outlined">
+                                    share
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Ice Climbing</h3>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="https://img.upanh.tv/2023/12/17/tommy-lisbin-FCIJfK0r1Xc-unsplash.jpg" alt="">
+                        <div class="icons">
+
+                            <a href="#"><span class="material-symbols-outlined">
+                                    visibility
+                                </span></a>
+                            <a href="#"><span class="material-symbols-outlined">
+                                    share
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Expedition Climbing</h3>
+
+
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="https://img.upanh.tv/2023/12/17/climbing-2609319_1280.jpg" alt="">
+                        <div class="icons">
+
+                            <a href="#"><span class="material-symbols-outlined">
+                                    visibility
+                                </span></a>
+                            <a href="#"><span class="material-symbols-outlined">
+                                    share
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Scrambling</h3>
+
+
+                    </div>
+                </div>
+
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="https://img.upanh.tv/2023/12/17/greg-rosenke-UkIinksPvT0-unsplash.jpg" alt="">
+                        <div class="icons">
+
+                            <a href="#"><span class="material-symbols-outlined">
+                                    visibility
+                                </span></a>
+                            <a href="#"><span class="material-symbols-outlined">
+                                    share
+                                </span></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <h3>Snowshoeing</h3>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+    <!--shop section end-->
+
+ 
+    <!--packages section start-->
+    <section class="packages" id="packages">
+        <h1 class="heading">Records</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.mountkinabalu.com/image/tour/4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Fastest Growing Mountain: Nanga Parbat</h3>
+                    <p>While not as zany as some of the others on this list, Nanga Parbat’s status as the world’s
+                        fastest-growing mountain seems worth a mention. As of 2005, the 8,126-meter (26,660ft) peak is
+                        reportedly growing at a rate of 0.27 inches per year, which puts it on track to outstrip Everest
+                        as the world’s tallest peak in around 241,000 years. This isn’t particularly exciting, although
+                        it does mean that in a quarter of a million years all the Everest record-holding goons may have
+                        their titles nixed</p>
+
+                    <a href="#" class="btn">explore now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.mountkinabalu.com/image/packages/lucky24/oct_dec_2023.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Fastest Time to Walk up Kilimanjaro Backward: 24 Hours</h3>
+                    <p>Ahhhh, Kilimanjaro. The ultimate walk-up, and as such, the ultimate stomping ground for all
+                        would-be mountain record holders. Nepali mountaineer Sanjay Pandit walked backward to the
+                        19,347-foot high point of Africa on December 18, 2015, clocking in at 24 hours and 40 minutes.
+                    </p>
+
+                    <a href="#" class="btn">explore now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.mountkinabalu.com/image/tour/41.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Longest Tyrolean Traverse over a Lava Lake: Karina Oliani, 329ft</h3>
+                    <p>Brazilian woman Karina Oliani pulled herself 329 feet over a lava-filled crater in Ethiopia,
+                        wearing what looks like an astronaut suit, in December 2017. “The most challenging part of this
+                        record,” she said, “was finding two good rigging spots.” Tyroleans don’t really require any
+                        particular skill or fitness level, so was this something any of us could do? Probably. But this
+                        scene looks plucked straight out of a Metal Gear game, so I figured it was worth a mention.</p>
+
+                    <a href="#" class="btn">explore now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.mountkinabalu.com/image/tour/11.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Largest Clean-Up on Everest: 22,879 lbs of Trash</h3>
+                    <p>After all these records, most rather depressing, I’ve decided to end on a positive note. The
+                        Guinness World Records lists the “largest clean-up on Everest” as a 45-day effort by 12 Sherpas
+                        between April and May of 2019, collecting a whopping 22,879 pounds of garbage, as well as four
+                        dead bodies left on the mountain.</p>
+
+                    <a href="#" class="btn">explore now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.mountkinabalu.com/image/tour/5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Most People Connected by a Rope: 2,846</h3>
+                    <p>Surprisingly, this didn’t occur as a result of some tourist nonsense on the Half Dome cables or
+                        Angels Landing. Along a trail in the Presolana massif of the Italian Bergamasque Alps in July of
+                        2017, 2,846 people roped themselves together. Ostensibly organized to “[promote] safety and
+                        sustainability</p>
+
+                    <a href="#" class="btn">explore now</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="https://www.mountkinabalu.com/image/tour/12.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Longest Line of Tents: 721</h3>
+                    <p>Surprisingly, the world’s longest line of tents isn’t found outside your local Best Buy on Black
+                        Friday. In fact, the world’s longest line of tents consisted of 721 tents, erected on a wooden
+                        walkway in the Wugong Mountains in Pingxiang, China on October 21, 2018. The total line of
+                        tents, put up by 200 volunteers as part of a local tourism initiative, measured 4,863 feet.</p>
+                    <a href="#" class="btn">explore now</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <!--packages secton end-->
+
+
+
+
+
+    <!--blog section start-->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">Hazards</h1>
+        <div class="swiper blogs-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide">
+                    <div class="box">
+                    <img src="https://img.upanh.tv/2023/12/17/yente-van-eynde-4KhBmnviiwE-unsplash.jpg" alt="">
+                    <div class="icon">
+                        <a href="#"><span class="material-symbols-outlined">
+                                calendar_month
+                            </span>24st may 2023</a>
+                        <a href=""><span class="material-symbols-outlined">
+                                person
+                            </span>by ali</a>
+                    </div>
+                    <div class="content">
+                    <h3>Is rock climbing dangerous? </h3>
+                    <p>A common way of answering this question is to say that you’re more likely to get injured driving
+                        to the crag than when you’re on belay, but is that actually true? </p>
+                    <a href="" class="btn">read more</a>
+                </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="box">
+                    <img src="https://img.upanh.tv/2023/12/18/child-2737064_1280.jpg" alt="child-2737064_1280.jpg">
+                    <div class="icon">
+                        <a href=""><span class="material-symbols-outlined">
+                                calendar_month
+                            </span>2st june 2022</a>
+                        <a href="#"><span class="material-symbols-outlined">
+                                person
+                            </span>by max</a>
+                           
+                    </div>
+                    <div class="content">
+                    <h3>Minor injuries </h3>
+                    <p>The majority of climbing accidents lead to minor injuries such as scrapes from the rock and
+                        strained or torn ligaments. Climbers most frequently injure their extremities, not internal
+                        organs. The predominant portion of injuries are to the head, neck, chest and abdomen. </p>
+                    <a href="" class="btn">read more</a>
+                </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="box">
+                    <img src="https://img.upanh.tv/2023/12/18/mountain-69517_1280.jpg" alt="mountain-69517_1280.jpg">
+                    <div class="icon">
+                        <a href=""><span class="material-symbols-outlined">
+                                calendar_month
+                            </span>4st may 2022</a>
+                        <a href=""><span class="material-symbols-outlined">
+                                person
+                            </span>by elsa</a>
+                    </div>
+                    <div class="content">
+                    <h3>Falling </h3>
+                    <p>Falling is the most common cause of climbing injuries and it usually happens when you’re on the
+                        way up, not down. Lead climbers are at higher risk of falling than their partners. If you’re
+                        leading, you’re only as safe as the last piece of gear you placed, after all. </p>
+                    <a href="" class="btn">read more</a>
+                </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="box">
+                    <img src="https://img.upanh.tv/2023/12/18/rappelling-1842180_1280.jpg"
+                        alt="rappelling-1842180_1280.jpg">
+                    <div class="icon">
+                        <a href=""><span class="material-symbols-outlined">
+                                calendar_month
+                            </span>11st july 2023</a>
+                        <a href=""><span class="material-symbols-outlined">
+                                person
+                            </span>by leona</a>
+                    </div>
+                    <div class="content">
+                    <h3>Improper use of equipment </h3>
+                    <p>Of course, human error accounts for some rock climbing accidents, whether that’s not
+                        communicating with your partner properly, not tying in properly or not placing gear securely.
+                    </p>
+                    <a href="" class="btn">read more</a>
+                </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="box">
+                    <img src="https://img.upanh.tv/2023/12/18/the-jade-dragon-snow-mountain-1622223_1280.jpg"
+                        alt="the-jade-dragon-snow-mountain-1622223_1280.jpg">
+                    <div class="icon">
+                        <a href=""><span class="material-symbols-outlined">
+                                calendar_month
+                            </span>24st feburary 2023</a>
+                        <a href=""><span class="material-symbols-outlined">
+                                person
+                            </span>by mimi</a>
+                    </div>
+                    <div class="content">
+                    <h3>Snow and ice </h3>
+                    <p>Snow and ice covered surfaces increase the probability of falling, and the length of the falls.
+                    </p>
+                    <a href="" class="btn">read more</a>
+                </div>
+                </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="box">
+                    <img src="https://img.upanh.tv/2023/12/17/beautiful-strawberry-garden-sunrise-doi-ang-khang-chiang-mai-thailand.jpg"
+                        alt="">
+                    <div class="icon">
+                        <a href=""><span class="material-symbols-outlined">
+                                calendar_month
+                            </span>24st may 2023</a>
+                        <a href=""><span class="material-symbols-outlined">
+                                person
+                            </span>by admin</a>
+                        </div>
+                    
+                    <div class="content">
+                    <h3>Weather </h3>
+                    <p>Changing weather conditions always increase danger in the outdoors, whether that’s climbing a
+                        slick surface in the rain or dangerous conditions like lightning.</p>
+                    <a href="" class="btn">read more</a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!--blog section end-->
+
+    
+
+    <!--newsletter section start-->
+    <section class="newsletter">
+        <div class="content">
+            <h1 class="heading">subscribe now</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, sint necessitatibus impedit quaerat
+                officiis vitae debitis dolorem culpa, in id maxime ullam, nam quod reprehenderit voluptatibus itaque
+                omnis dicta rem.</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" id="" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+    </section>
+    <!--newsletter section end-->
+    
+
+    <!--footer start-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="homepage.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="club.html">Clubs</a>
+                <a href="guideline.html">Guidelines</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+           
+            <div class="box">
+                <h3>contact infor</h3>
+                <a href=""><i class="fas fa-phone"></i> +231-413-123</a>
+                <a href=""><i class="fas fa-phone"></i> +111-442-123</a>
+                <a href=""><i class="fas fa-envelope"></i> linhdaica@gmail.com</a>
+                <a href=""><i class="fas fa-map"></i> Ho Chi Minh, Viet Nam </a>
+
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href=""><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href=""><i class="fab fa-twitter"></i> twitter</a>
+                <a href=""><i class="fab fa-instagram"></i> instagram</a>
+                <a href=""><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href=""><i class="fab fa-github"></i> github</a>
+
+            </div>
+
+            <div class="credit">created by <span>Group 7 Aptech</span> | allright reserved!</div>
+        </div>
+    </section>
+    <!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+
+
+    <script src="script/"></script>
+    <script src="script/home.js"></script>
+    <script src="script/script_search.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/homepage/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style/homepage/webmaster.css">
+
+    <style>
+        .home {
+            height: 50vh;
+            width: 100%;
+            background: url(https://img.upanh.tv/2023/12/17/guillaume-marques-9HRLg-yzeq8-unsplash.jpg);
+            background-position: center;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+
+        }
+
+        .category .box-container .box {
+            text-align: left;
+            padding: 2rem;
+        }
+
+        .category-all {
+            display: flex;
+
+        }
+
+        article.menu {
+            width: 20%;
+            padding: 5px;
+
+            /* Adjust padding as needed */
+            box-sizing: border-box;
+            font-size: 1.5rem;
+            margin-top: 30px;
+            margin-left: 0px;
+           
+
+        }
+
+        article li {
+            border: 1px solid blueviolet;
+            border-width: 100%;
+
+            margin-left: 0px;
+            list-style: none;
+            background-color: forestgreen;
+
+        }
+
+        article li:hover {
+            background-color: aqua;
+
+        }
+
+
+
+        aside {
+            flex-grow: 1;
+            padding: 20px;
+            /* Adjust padding as needed */
+            box-sizing: border-box;
+        }
+
+        .category-all {
+            padding: 5px;
+        }
+
+        aside.content {
+            overflow-y: auto;
+            /* Enable vertical scrollbar if needed */
+            height: 100vh;
+            /* Set a fixed height to make it always visible */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Header section start-->
+    <header class="header">
+        <a href="" class="logo"><img src="https://img.upanh.tv/2023/12/17/mountain.png"
+                style="width: 100px; border-radius: 5px;" alt="logo">moutaineering</a>
+
+        <nav class="navbar">
+            <div>
+                <span id="nav-close" class="material-symbols-outlined">
+                    close
+                </span>
+                <a href="homepage.html">Home</a>
+                <a href="technican.html">Technican</a>
+                <a href="development.html">Latest Development</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="club.html">Clubs</a>
+               
+                <a href="guidelines.html">Guidelines</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" onclick="showLogin(); return false;">Login</a>
+            </div>
+
+            <div id="login-form" style="display: none;">
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+                <button onclick="attemptLogin()">Submit</button>
+            </div>
+        </nav>
+
+        <div class="icons">
+            <a href="#"><span id="menu-btn" class="material-symbols-outlined">
+                    menu
+                </span></a>
+
+            <a href="#"><span class="material-symbols-outlined" id="search-btn">
+                    search
+                </span></a>
+        </div>
+
+    </header>
+    <!--Header section end-->
+
+    <!--Search form-->
+    <div class="search-form">
+        <span id="close-search" class="material-symbols-outlined">
+            close
+        </span>
+        <form action="">
+            <input type="text" name="" placeholder="search here..." id="search-box">
+            <label><span class="material-symbols-outlined">
+                    search
+                </span></label>
+        </form>
+    </div>
+    <!--Search form end-->
+    <section class="home" id="home">
+
+
+    </section>
+
+    <!--Home section end-->
+
+
+
+
+    <!--categorysection start-->
+
+    <h1 class="heading">Guidelines</h1>
+    <p style="font-size: 1.5rem;">
+        Welcome to the thrilling world of mountaineering! Whether you are a novice adventurer or an
+        experienced trekker looking to conquer new heights, this comprehensive guide will walk you through
+        every step of your mountaineering journey.
+    </p>
+
+    <section class="category-all">
+
+
+        <article class="menu">
+            <ul>
+                <li>
+                    <a href="">Preparing</a>
+                </li>
+                <li>
+                    <a href="">Research and Planning</a>
+                </li>
+                <li>
+                    <a href="">Navigation and Techniques</a>
+                </li>
+
+                <li>
+                    <a href="">Sheltering and Hazards</a>
+                </li>
+                <li>
+                    <a href="">Records and Success Stories</a>
+                </li>
+                <li>
+                    <a href="">GeoLocation and Summit Stories</a>
+                </li>
+                <li>
+                    <a href="">Gallery of Adventures</a>
+                </li>
+                <li>
+                    <a href="">Latest Developments</a>
+                </li>
+                <li>
+                    <a href="">General Guidelines</a>
+                </li>
+            </ul>
+
+
+        </article>
+        <aside class="content">
+            <div class="category">
+
+                <div class="box-container">
+                    <div class="box">
+                        <div class="content">
+                        <h3>1.Preparing</h3>
+                        <p>1.1. Assess Your Readiness <br>
+                            Evaluate your rock climbing skills, strength, and mental preparedness. <br>
+                            Consider taking a rock climbing fundamentals course. <br>
+                            1.2. Gear Up <br>
+                            Invest in rock climbing-specific gear: <br>
+                            Climbing shoes <br>
+                            Harness <br>
+                            Helmet <br>
+                            Chalk bag for grip <br>
+                            Ensure your gear is in excellent condition. <br>
+                            1.3. Physical Conditioning <br>
+                            Focus on building upper body strength, finger strength, and core stability. <br>
+                            Incorporate climbing-specific exercises into your fitness routine </p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                    </div>
+                    <div class="box">
+                        <div class="content">
+
+                        <h3>2. Research and Planning</h3>
+                        <p>2.1. Choose Your Climb <br>
+                            Research climbing routes based on difficulty, type of rock, and location. <br>
+                            Understand the specific challenges of the chosen climbing destination. <br>
+                            2.2. Join a Climbing Community <br>
+                            Connect with local climbing clubs or groups. <br>
+                            Attend indoor climbing sessions to practice and learn from experienced climbers.</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="content">
+
+                        <h3>3. Navigation and Techniques</h3>
+                        <p>3.1. Map Reading and Navigation <br>
+                            Learn to read climbing route guides and topographic maps for outdoor climbs. <br>
+                            Understand route grading systems. <br>
+                            3.2. Climbing Techniques <br>
+                            Master essential climbing techniques, including: <br>
+                            Belaying <br>
+                            Lead Climbing <br>
+                            Toprope Climbing</p>
+                        <a href="#" class="btn">read more</a>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="content">
+
+                        <h3>4. Sheltering and Hazards</h3>
+                        <p>4.1. Sheltering <br>
+                            Understand how to set up a temporary shelter during multi-pitch climbs. <br>
+                            Learn emergency bivouac techniques. <br>
+                            4.2. Hazards and Risk Management <br>
+                            Identify rock climbing hazards, such as loose rock and falling objects. <br>
+                            Practice risk management strategies for climbing safety. <br>
+                            <a href="#" class="btn">read more</a>
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="content">
+
+                        <h3>5. Records and Success Stories</h3>
+                        <p>5.1. Record Your Climbs <br>
+                            Maintain a climbing journal noting details of each climb, including challenges and
+                            achievements. <br>
+                            Document your progression and lessons learned. <br>
+                            5.2. Learn from Climbing Stories <br>
+                            Read about successful rock climbing stories. <br>
+                            Gain insights into route selection, technical challenges, and overcoming fears <br>
+                            <a href="#" class="btn">read more</a>
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="content">
+
+                        <h3>6. GeoLocation and Summit Stories</h3>
+                        <p>6.1. Explore Climbing Locations <br>
+                            Use GeoLocation APIs to discover rock climbing spots globally. <br>
+                            Plan your climbs by exploring potential routes and conditions. <br>
+                            6.2. Summit Stories <br>
+                            Engage with the climbing community to share and learn from summit stories. <br>
+                            Participate in climbing forums and events. <br>
+                            <a href="#" class="btn">read more</a>
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="content">
+
+                        <h3>7. Gallery of Adventures</h3>
+                        <p>7.1. Document Your Climbing Journey <br>
+                            Capture stunning visuals of your climbing experiences. <br>
+                            Create a gallery showcasing your rock climbing adventures. <br>
+                            7.2. Share with the Climbing Community <br>
+                            Share your climbing experiences on social media platforms. <br>
+                            Contribute to climbing forums by providing tips and recommendations. <br>
+                            <a href="#" class="btn">read more</a>
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="content">
+
+                        <h3>8. Latest Developments</h3>
+                        <p>8.1. Stay Updated <br>
+                            Stay informed about the latest rock climbing gear, safety protocols, and training methods.
+                            <br>
+                            Attend workshops and events to enhance your skills. <br>
+                            <a href="#" class="btn">read more</a>
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="content">
+
+                        <h3>9. General Guidelines</h3>
+                        <p>9.1. Safety Reminders <br>
+                            Prioritize safety in all climbing situations. <br>
+                            Regularly check and maintain your climbing gear. <br>
+                            9.2. Environmental Responsibility <br>
+                            Practice Leave No Trace principles. <br>
+                            Respect access restrictions to climbing areas. <br>
+                            9.3. Continuous Learning <br>
+                            Embrace a mindset of continuous learning. <br>
+                            Seek mentorship and feedback to improve your climbing skills. <br>
+                            <a href="#" class="btn">read more</a>
+                        </p>
+                    </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </aside>
+    </section>
+
+
+
+    <!--categorysection end-->
+
+    <!--about section start-->
+
+
+    <!--footer start-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <a href="homepage.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="club.html">Clubs</a>
+                <a href="guideline.html">Guidelines</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="box">
+                <h3>extra link</h3>
+                <a href="">my accout</a>
+                <a href="">my order</a>
+                <a href="">my wishlist</a>
+                <a href="">ask question</a>
+                <a href="">term of use</a>
+                <a href="">privacy policy</a>
+            </div>
+            <div class="box">
+                <h3>contact infor</h3>
+                <a href=""><i class="fas fa-phone"></i> +231-413-123</a>
+                <a href=""><i class="fas fa-phone"></i> +111-442-123</a>
+                <a href=""><i class="fas fa-envelope"></i> linhdaica@gmail.com</a>
+                <a href=""><i class="fas fa-map"></i> Ho Chi Minh, Viet Nam </a>
+
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href=""><i class="fab fa-facebook-f"></i> facebook</a>
+                <a href=""><i class="fab fa-twitter"></i> twitter</a>
+                <a href=""><i class="fab fa-instagram"></i> instagram</a>
+                <a href=""><i class="fab fa-linkedin"></i> linkedin</a>
+                <a href=""><i class="fab fa-github"></i> github</a>
+
+            </div>
+
+            <div class="credit">created by <span>Group 7 Aptech</span> | allright reserved!</div>
+        </div>
+    </section>
+    <!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/home.js"></script>
+    <script src="script/script_search.js"></script>
+
+</body>
+
+</html>

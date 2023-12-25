@@ -1,0 +1,73 @@
+#edit_clear {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid #10221b;
+    color: #10221b;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+}
+
+#edit_clear:hover {
+    background-color: #10221b;
+    color: #fff;
+}
+
+
+.message table{
+    border: 1px solid black;
+   
+    width: 100%;
+    background-color: aqua;         
+
+}   
+.message table tr{
+    border: 1px solid black;
+    
+    
+    
+}  
+.message table td{
+    border: 1px solid black;
+    gap: 0;
+    font-size: 1.7rem;           
+    
+} 
+
+.message table td button{
+    background: none;
+    color: black;
+    font-size: 1.7rem;
+    border: none;           
+    
+}
+
+.message table td button:hover{
+   
+    color: red;
+           
+    
+}
+.message table th{
+    border: 1px solid black;
+    gap: 0;
+    font-size: 1.7rem;   
+    
+    
+}  
+
+
+
+
+.message table tr:hover{
+
+    background-color: blue;
+
+}
+
+.message{
+   
+    margin-bottom: 150px;
+}
+

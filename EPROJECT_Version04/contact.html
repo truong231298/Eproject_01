@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/homepage/style.css">
+    <link rel="stylesheet" href="style/homepage/webmaster.css">
+     
+
+  
+    <link rel="stylesheet" href="style/contact.css">
+
+    <style>
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <!--Header section start-->
+    <header class="header">
+        <a href="" class="logo"><img src="https://img.upanh.tv/2023/12/17/mountain.png"
+                style="width: 100px; border-radius: 5px;" alt="logo">moutaineering</a>
+
+        <nav class="navbar">
+            <div>
+                <span id="nav-close" class="material-symbols-outlined">
+                    close
+                </span>
+                <a href="homepage.html">Home</a>
+                <a href="technican.html">Technican</a>
+                <a href="development.html">Latest Development</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="club.html">Clubs</a>
+
+                <a href="guidelines.html">Guidelines</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="#" onclick="showLogin(); return false;">Login</a>
+            </div>
+
+            <div id="login-form" style="display: none;">
+                <label for="username">Username:</label>
+                <input type="text" id="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password">
+                <button onclick="attemptLogin()">Submit</button>
+            </div>
+
+        </nav>
+
+    
+
+    </header>
+    <!--Header section end-->
+
+    <div>
+
+    </div>
+
+    <!--Search form-->
+    <div class="search-form">
+        <span id="close-search" class="material-symbols-outlined">
+            close
+        </span>
+        <form action="">
+            <input type="text" name="" placeholder="search here..." id="search-box">
+            <label><span class="material-symbols-outlined">
+                    search
+                </span></label>
+        </form>
+    </div>
+    <!--Search form end-->
+
+    <!--map start-->
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43310.66385557393!2d7.31072157482861!3d47.27688695060099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791e0a155653411%3A0x7ec2fefb22e04f39!2zMjc0MCBNb3V0aWVyLCBUaOG7pXkgU8Sp!5e0!3m2!1svi!2s!4v1703079089897!5m2!1svi!2s"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </section>
+    <!--map start-->
+
+    <!--contact start-->
+    <section class="contact-us" >
+        <table id="contact-us" style="display: block;" >
+            <tr>
+                <td>
+                    <div class="contact-col">
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>306 Thanh Tuyen, Van Phuc Building</h5>
+                                <p>Thu Duc district, Ho Chi Minh City</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <h5>+84552664744</h5>
+                                <p>Monday to Friday, 7AM to 5PM</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <span>
+                                <h5>Linhaptech@gmail.com</h5>
+                                <p>Email us</p>
+                            </span>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="contact-col">
+                        <form action="">
+                            <input type="text" placeholder="Enter your name" required id="contact_name">
+                            <input type="email" placeholder="Enter your email" required id="contact_mail">
+                            <input type="text" placeholder="Enter your subject" required id="contact_subject">
+                            <textarea rows="8" placeholder="message" required id="contact_message"></textarea>
+                            <button type="submit" class="btn" onclick="saveContacttoLocalstorage()">Send
+                                message</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </section>
+
+
+        <!--Hien thị thong tin message-->
+
+        <div class="message" style="display: none;" id="contact-message"></div>
+
+
+        <script src="script/contact.js"></script>
+        <script src="script/script.js"></script>
+        <script src="script/home.js"></script>
+        <script src="script/script_search.js"></script>
+
+
+
+</body>
+
+</html>
