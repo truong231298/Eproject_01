@@ -99,13 +99,16 @@
             <img src="picture/avatar-login.png" alt="">
         </div>
         <div class="container">
-            <label for="username">Username:</label>
-            <input type="text" id="username" placeholder="Enter your name">
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter your password">
-            <label for="password">Repeat Password:</label>
-            <input type="password" id="password" placeholder="Enter your Repeat password">
-            <button type="submit" onclick="attemptLogin()">Sign Up</button>
+            <form class="form">
+                <label for="username">Username:</label>
+                <input type="text" name="username" placeholder="Enter your name">
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="Enter your password">
+                <label for="password">Repeat Password:</label>
+                <input type="password" name="password" placeholder="Enter your Repeat password">
+                <button type="submit">Sign Up</button>
+            </form>
+           
             <div class="more">
                 <span class="psw">Have an account? <a href="#" id="linksignin">sign in?</a></span>
             </div>

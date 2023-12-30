@@ -41,6 +41,33 @@ document.querySelector('#linksignin').onclick = () => {
     signupForm.classList.remove('active');
     loginForm.classList.add('active');
 }
+/*sign up data post*/
+const formEl = document.querySelector('.form');
+
+formEl.addEventListener('submit', e => {
+    e.preventDefault();
+
+    const formData = new FormData(formEl);
+    const data = new URLSearchParams(formData);
+
+    fetch('https://658e79a92871a9866e793ab1.mockapi.io/access', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        // Send your data in the request body as JSON
+        body: data
+    }).then(res => {
+        if (res.ok) {
+            return res.json();
+        }
+        // handle error
+    }).then(task => {
+        // do something with the new task
+        console.log(data)
+    }).catch(error => {
+        // handle error
+        console.log(error)
+    })
+});
 
 
 
@@ -82,19 +109,19 @@ var swiper = new Swiper(".product-slider", {
     breakpoints: {
         0: {
             slidesPerView: 1,
-          
+
         },
         640: {
             slidesPerView: 2,
-          
+
         },
         768: {
             slidesPerView: 3,
-          
+
         },
         1024: {
             slidesPerView: 4,
-            
+
         },
     },
 });
@@ -110,15 +137,15 @@ var swiper = new Swiper(".review-slider", {
     breakpoints: {
         0: {
             slidesPerView: 1,
-          
+
         },
         640: {
             slidesPerView: 2,
-          
+
         },
         768: {
             slidesPerView: 3,
-          
+
         },
     },
 });
@@ -134,15 +161,15 @@ var swiper = new Swiper(".blogs-slider", {
     breakpoints: {
         0: {
             slidesPerView: 1,
-          
+
         },
         768: {
             slidesPerView: 2,
-          
+
         },
         991: {
             slidesPerView: 3,
-          
+
         },
     },
 });
@@ -158,19 +185,19 @@ var swiper = new Swiper(".clients-slider", {
     breakpoints: {
         0: {
             slidesPerView: 1,
-          
+
         },
         640: {
             slidesPerView: 2,
-          
+
         },
         768: {
             slidesPerView: 3,
-          
+
         },
         1024: {
             slidesPerView: 4,
-            
+
         },
     },
 });
